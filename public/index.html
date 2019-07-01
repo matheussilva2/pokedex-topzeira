@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pokedex Topzeira</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-dark">
+	<!-- start form -->
+	<form id="initialForm" style="margin-top: 20%;" class="container">
+		<div class="input-group input-group-lg">
+			<input id="initialSeachInput" style="z-index: 2" type="text" class="form-control" placeholder="Type pokemon's name you are looking for..." required>
+			<div class="input-group-append">
+				<input id="initialSearchBtn" type="submit" class="btn btn-lg btn-success">
+			</div>
+		</div>
+	</form>
+
+	<div style="display: none" id="infoScreen" class="container bg-transdark mx-auto py-3">
+		<section class="bg-white mt-4 py-3" id="poke-info">
+			<div class="row">
+				<div class="col-12">
+					<header class="container-fluid mt-3 bg-light">
+						<strong class="text-dark">#1 Bulbasaur</strong>
+					</header>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-5">
+					<div class="px-2 py-3">
+						<div>
+							<a href="#"> &lt; </a>
+							<img id="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png">
+							<a href="#">&gt;</a>
+						</div>
+						<div class="mb-3">
+							<span class="badge bg-secondary text-white">Grass</span>
+							<span class="badge bg-secondary text-white">Poison</span>
+						</div>
+						<div class="btn-group btn-group-vertical pl-3">
+							<button id="descriptionBtn" type="button" class="btn btn-sm mb-1">Description</button>
+							<button id="abilitiesBtn" type="button" class="btn btn-sm mb-1">Abilities</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-6">
+					<div id="description-container" class="px-2 py-3">
+						<p>
+							<h4>Description </h4>
+							<span id="poke-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequatur vel neque vitae libero quaerat fuga minus facere adipisci sint. Error harum maxime atque doloremque esse deserunt repellendus, aut sunt?</span>
+						</p>
+						<p>
+							<strong>Weight: </strong>
+							<span id="poke-weight">2kg</span>
+						</p>
+					</div>
+
+					<div id="abilities-container" class="px-2 py-3">
+						<h4>Abilities</h4><br>
+						<dl>
+							<dt><h5>Chlorophyll</h5></dt>
+							<dd>Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less.</d>
+
+							<dt><h5>Overgrow</h5></dt>
+							<dd>Doubles Speed during strong sunlight.</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="input-group col-12 justify-content-center">
+				<input type="text" name="search-input" placeholder="Type pokemon's name and search...">
+				<div class="input-group-append">
+					<button id="searchBtn" type="button" class="btn btn-success">
+						Search
+					</button>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+
+	<div id="bg">
+		<img src="https://images.designtrends.com/wp-content/uploads/2016/02/14184701/Pokemon-Pikachu-Wallpaper.jpg" alt="">
+	</div>
+
+	<script src="bundle.js"></script>
+</body>
+</html>
