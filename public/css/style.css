@@ -28,7 +28,7 @@
 	width: 500px;
 	height: 600px;
 	border: 10px solid #E21430;
-	border-radius: 100px;
+	border-radius: 25px;
 	z-index: 2;
 	opacity: 0;
 	transition: opacity .5s;
@@ -41,15 +41,48 @@
 }
 
 #poke-info{
+	height: 570px;
 	border-radius: 2px;
+	transition: height .5s;
 }
 
 #abilities-container{
 	opacity: 1;
 	transition: opacity .3s;
 	display: none;
+	height: 352px;
+	overflow-y: auto;
 }
-#description-container {
+
+#stats-container {
 	opacity: 1;
 	transition: opacity .3s;
+}
+
+.notifications{
+    position: fixed;
+    display: block;
+    top: 20px;
+    left: 70%;
+    width: 400px;
+}
+
+.loadingScreen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.loadingScreenContent {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.loadingScreen, .loadingScreenContent{
+	z-index: 3;
 }
